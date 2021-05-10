@@ -1,3 +1,0 @@
-# UTS_48024_Application_Programming
-
-2021_autumn
