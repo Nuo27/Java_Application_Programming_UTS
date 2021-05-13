@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="controller.ShowAllCustomersController"
+      prefWidth="832" 
+      alignment="CENTER" spacing="10" 
+      styleClass="root">
+    <!--icon and title-->
+    <HBox alignment="CENTER_LEFT" spacing="10">
+        <ImageView>
+            <image>
+                <Image url="@game_icon.png"/>
+            </image>
+        </ImageView>
+        <Label text="All Customers" styleClass="h1"/>
+    </HBox>
+    <!--table, there's no title here because there wasn't one in the demo-->
+    <TableView items="${controller.kiosk.customers}" styleClass="table-view">
+        <columns>
+            <TableColumn text="ID">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id"/>
+                </cellValueFactory>
+            </TableColumn>
+            
+            <TableColumn text="Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="name"/>
+                </cellValueFactory>
+            </TableColumn>
+            
+            <TableColumn text="Balance">
+                <cellValueFactory>
+                    <PropertyValueFactory property="balance"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    <!--it was "Exit" in the demo and i like "close" better-->
+    <Button text="Close" styleClass="button" onAction="#Close"/>
+    
+    <stylesheets>
+        <URL value="@kiosk.css"/>
+    </stylesheets>
+
+</VBox>

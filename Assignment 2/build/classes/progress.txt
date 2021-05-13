@@ -1,0 +1,22 @@
+[y] The Main menu window is at least partially done.
+[y] The Main menu window is done.
+[y] The Administration menu window is at least partially done.
+[y] The Administration menu window is done.
+[y] The Catalogue menu window is at least partially done.
+[y] The Catalogue menu window is done.
+[?] The Add Customer and Game windows are at least partially done.
+[?] The Add Customer and Game windows are done.
+[?] The Remove Customer and Game windows are at least partially done.
+[?] The Remove Customer and Game windows are done.
+[y] The Customer Record and Favourite Games windows are at least partially done.
+[y] The Customer Record and Favourite Games windows are done.
+[?] The Show All Games and Show Available Games windows are at least partially done.
+[?] The Show All Games and Show Available Games windows are done.
+[?] The Show By Genre and By Year windows are at least partially done.
+[?] The Show By Genre and By Year windows are done.
+[y] The Rent a Game window is at least partially done.
+[y] The Rent a Game window is done.
+[y] The Return a Game window is at least partially done.
+[y] The Return a Game window is done.
+[y] The Top-up Account window is at least partially done.
+[y] The Top-up Account window is done.

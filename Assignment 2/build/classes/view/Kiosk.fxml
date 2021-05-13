@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+    <!--this fxml shows the kiosk-->
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.KioskController"
+      alignment="CENTER" spacing="10"
+      styleClass="root"
+      prefWidth="800.0"
+>
+    <!--game kiosk icon and label position-->
+    <HBox alignment="CENTER_LEFT" spacing="9">
+        <ImageView >
+            <image>
+                <Image url ="@game_icon.png"/>
+            </image>
+        </ImageView>
+        <Label text = "Game Kiosk" styleClass ="h1"/>
+    </HBox>
+    <!--admin menu position-->
+    <HBox alignment="CENTER_RIGHT" spacing="9">
+        <Button text="Administration" styleClass ="button" onAction ="#ShowAdminMenu"/>
+    </HBox>  
+    <!--menu options position-->
+    <HBox alignment="CENTER" spacing="10">
+        <Button text="${'Explore\nCatalogue'}" styleClass="largeButton" onAction="#ShowCatalogueMenu"/>
+        <Button text="${'Customer\nRecord'}" styleClass="largeButton" onAction="#ShowCustomerRecord"/>
+        <Button text="${'Top-Up\nAccount'}" styleClass="largeButton" onAction="#ShowTopUpAccount"/>
+        <Button text="${'Favourite\nGames'}" styleClass="largeButton" onAction="#ShowFavouriteGames"/>
+    </HBox>
+    <!--single Exit button position-->
+    <Button text="Exit" styleClass="button" onAction="#Close"/>
+    <!-- 
+    <Label text="&lt;insert assignment here&gt;"/>
+    -->
+    <stylesheets>
+        <URL value="@kiosk.css"/>
+    </stylesheets>
+
+</VBox>

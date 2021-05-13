@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+     fx:controller="controller.CatalogueController"
+     alignment="center" spacing="10"
+     styleClass="root"
+    prefWidth="800.0">
+    <!--game kiosk icon and title position-->
+    <HBox alignment="CENTER_LEFT" spacing="9"  >
+        <ImageView >
+            <image>
+                <Image url ="@game_icon.png"/>
+            </image>
+        </ImageView>
+        <Label text = "Catalogue" styleClass ="h1"/>
+    </HBox>
+    <!--options menu position-->
+    <HBox alignment="CENTER_LEFT" spacing="15">
+        <!--add a vbox here because in the demo these four options are placed vertically -->
+        <VBox alignment="center_left" spacing="10">
+            <Label text="View Games:" styleClass="h2"/>
+            <Button text="All Games" styleClass="menuButton" onAction="#ShowAllGames"/>
+            <Button text="Available Games" styleClass="menuButton" onAction="#ShowAvailableGames"/>
+            <Button text="Games by Genre" styleClass="menuButton" onAction="#ShowGamesByGenre"/>
+            <Button text="Games by Year" styleClass="menuButton" onAction="#ShowGamesByYear"/>
+        </VBox>
+        <!--stays hbox of the other two button-->
+        <Button text="${'Rent a \nGame'}" styleClass="largeButton" onAction="#ShowRentGame"/>
+        <Button text="${'Return a \nGame'}" styleClass="largeButton" onAction="#ShowReturnGame"/>
+    </HBox>
+    <!--single Close button position-->
+    <Button text="Close" styleClass="button" onAction="#Close"/>
+    
+    
+    <stylesheets>
+        <URL value="@kiosk.css"/>
+    </stylesheets>
+</VBox>
